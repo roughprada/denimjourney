@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "A journey through the lens"
+AuthUserFile /usr/home/rafaprada.info/web/denimjourney/.htpasswd
+Require valid-user
