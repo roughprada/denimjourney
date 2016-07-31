@@ -1,190 +1,85 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//en">
+<html lang="en">
+	<head>
+		<meta name="description" content="">
+		<title>Journey through the lens</title>
+<!--         <link rel="stylesheet" type="text/css" href="css/demo.css" />
+ --><!--         <link rel="stylesheet" type="text/css" href="assets/style.css">
+ -->        <link rel="stylesheet" type="text/css" href="assets/style2.css">
+  		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<script type="text/javascript" src="assets/modernizr.custom.92504.js"></script>
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Journey though the lens</title>
-  <link rel="stylesheet" type="text/css" href="assets/style.css" />
-  <link rel="stylesheet" type="text/css" href="assets/style2.css" />
-  <link href="/img/favicon.ico" type="image/x-icon" rel="shortcut icon" />
-  <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+		<script type="text/javascript">
+		// PASSWORD PROTECTION SCRIPT
 
-  <script src="assets/jquery-1.10.2.js" type="text/javascript"></script>
-  <script src="assets/jquery-1.10.2.js" type="js/javascript"></script>
+		function TheLogin() {
 
-<!-- script for scroll efect -->
-<!-- <script>
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script> -->
-<!-- END script for scroll efect -->
+		var password = 'pepper';
 
-<style type="text/css">
-  a {
-    font-family: Helvetica, Arial, Lucida Grande, sans-serif;
-    text-align: left;
-    font-size: 0.7em;
-    color: #000;
-    text-decoration: none;
-    padding-left: 10px;
-}
-</style>
+		if (this.document.login.pass.value == password) {
+		  top.location.href="journeys.html";
+		}
+		else {
+		  window.alert("Incorrect password, please try again.");
+		  }
+		}
+		</script>
+		<script type="text/javascript">
+		function checkSubmit(e)
+		{
+		   if(e && e.keyCode == 13)
+		   {
+		      document.forms[0].submit();
+		   }
+		}
+		</script>
 
+   	</head>
 
-</head>
+   	<style type="text/css">
+	    .sexy {
+	    	color: #f4f4f4;
+		    background: #2e52ad;
+		    font-weight: bold;
+		    margin-left: 5px;
+		    margin-top: 50px;
+		    font-family: Arial,sans-serif;
+		    border-radius: 4px;
+		    border: solid 0 #1b3e98;
+		    border-bottom: 2px solid #1b3e98;
+		    -moz-border-radius: 4px;
+		    -webkit-border-radius: 4px;
+		    border-radius: 4px;
+		    width: 200px;
+		    margin: 4px auto 4px auto;
+		    padding: 1vw;
+		    font-size: 1em;
+		}
+   	</style>
 
-<body>
-<div >
-      <div>
-          <div style="
-    position: absolute;
-    /* float: right; */
-    /* width: 300px; */
-    left: 10%;
-    padding: 20px;
-    /* background-color: rgba(0,0,0,.6); */
-">
-          <p style="width:300px; color: white !important;">Photography by Ivan Hugo (IH Studio)<br>
-                                Editorial and web Design: Rafa Prada<br><br>
-
-                                A journey through the lens.<br>
-                                #SanFrancisco #Paris #Tokio<br><br>
-
-                                Editorial Design and Art Direction for a global denim journey commissioned by Levi Strauss to capture influential street tendencies in San Francisco, Paris and Tokio through extensive field photography culture research.</p>
-          </div>
-          <div>
-         		<img class="lazy" src="img/tokyo/2.jpg" width="100%" />
-            <div style="left: 6%;position: relative;top: -130px;color: white;">
-            <a href="mailto:;" style=" color: white;"> -<br>share this shoot</a>
-            </div>
-          </div>
-          <div>
-              <img class="lazy" src="img/tokyo/F7T4846.jpg" style="
-                  width: 30%;
-                  float: right;
-                  right: 12%;
-                  position: relative;
-                  top: -200px;
-              ">
-          </div>
-          <div>
-              <img class="lazy" src="img/tokyo/F7T5008.jpg" style="
-                  width: 40%;
-                  float: right;
-                  right: 20%;
-                  position: relative;
-                  top: -10px;
-              ">
-          </div>
-      </div>
-	<div style="width: 80%;margin: auto;float: right;top: 30px; position: relative;">
-	        <video width="400" controls="" style="width: 80%;">
-          <source src="video/portrait-of-a-dancer.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-      	<p style="width: 60%; margin:auto; margin-top:20px; font-size: 1.2em;">
-      		<b>Denim is a daily wear. More details? Details…? Denim is also fashion to me, I always wear al least  one item every day like a clutch bag or pants, denim jacket.<br><br>
-      		(...)<br><br>
-      		Levis to me? Mmm…? Levis to me, Are you already filming?<br>
-      		Levis is very special to me as a denim brand, how can I explain… from design to this level everything is very cool and trendy.<b>
-      	</p>
-      </div>
-</div>
-
-<div width="100%" style="">
-<!-- 	<div>
-      	<p>
-      		Denim is a daily wear. More details? Details…? Denim is also fashion to me, I always wear al least  one item every day like a clutch bag or pants, denim jacket.<br><br>
-      		(...)<br><br>
-      		Levis to me? Mmm…? Levis to me, Are you already filming?<br>
-      		Levis is very special to me as a denim brand, how can I explain… from design to this level everything is very cool and trendy.
-      	</p>
-	</div> -->
-	<div style="
-    width: 90%;
-    margin: auto;
-">
-              <img class="lazy" src="img/tokyo/F7T4469.jpg" style="
-    width: 100%;
-    margin-top: 60px;
-">
-          </div>	
-</div>
-<div style="
-    padding-top: 30px;
-">
-	<div style="
-    width: 80%;
-    margin: auto;
-">
-      	<img class="lazy" src="img/tokyo/F7T4411.jpg" style="
-    width: 49%;
-    padding-right: 10px;
-">
-      	<img class="lazy" src="img/tokyo/F7T4414.jpg" style="
-    width: 50%;
-    float: right;
-">
-	</div>
-</div>
-<div style="width: 100%;padding: 80px 0 60px;">
-	<p style="
-    text-align: center;
-">
-		<a>DOWNLOAD TOKYO JOURNEY PDF HERE</a>
-	</p>
-</div>
-
-<!--     <div style="margin-bottom: 25px; font-size: xx-large; text-align: center;">
-       <h1>COMMING SOON</h1>
-    </div>
-    <div>
-        <img class="lazy" src="img/paris/bike.jpg" width="50%" />
-        <img class="lazy" src="img/sf/1.jpg" width="50%" style="float: right;">
-    </div> -->
-
-<!-- <div>
-  <a href="pdf/tokyoinside-v1.pdf"></a><img src="img/icono_pdf-bn.png"></a>
-</div>
+	<body>
+		<ul class="cb-slideshow">
+			<li><span>1</span></li>
+			<li><span>2</span></li>
+			<li><span>3</span></li>
+			<li><span>4</span></li>
+		</ul>
+<br><br><br><br><br><br>
+<div style="text-align: center;margin: 0 auto;background-color: rgba(255,255,255,0.7);max-width: 600px;padding: 2em;border-radius: 4px;" width="100%">
+<img src="img/journey.png">
+<h3>#SanFrancisco #Paris #Tokio</h3>
+<p>Global Merchandising team, San Francisco.<br>
+Photography by Ivan Hugo (IH Studio).</p>
+<p>Editorial and research for a global denim journey to capture influential street tendencies in San Francisco, Paris and Tokyo through visual insights.</p><br>
+<h3>Password required</h3>
+<form name="login" style="margin: 5px 0px 0px 0px;">
+<input type="text" name="pass" autofocus size="17" onkeydown="if(event.keyCode==13) return false;" style="width: 200px;padding: 1em; border:0px;"><br>
+<div onKeyPress="return checkSubmit(event)"><input type="button" value="Enter" class="sexy" onclick="javascript:TheLogin(this.form)" ></div>
+</form>
+<!-- 
+Password = pepper
  -->
-
-<!-- script for Lightbox efect -->
-<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
-<script type="text/javascript">
-    $(function($){
-        var addToAll = false;
-        var gallery = true;
-        var titlePosition = 'over';
-        $(addToAll ? 'img' : 'img.fancybox').each(function(){
-            var $this = $(this);
-            var title = $this.attr('title');
-            var src = $this.attr('data-big') || $this.attr('src');
-            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
-            $this.wrap(a);
-        });
-        if (gallery)
-            $('a.fancybox').attr('rel', 'fancyboxgallery');
-        $('a.fancybox').fancybox({
-            titlePosition: titlePosition
-        });
-    });
-    $.noConflict();
-</script>
- --><!-- END of script for Lightbox efect -->
-
+</div>
 </body>
 </html>
