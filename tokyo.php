@@ -6,6 +6,7 @@
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="assets/journey-style.css" rel="stylesheet" type="text/css">
     </head><body>
+<?php include("/password_protect.php"); ?>    
         <div class="cover">
             <div class="navbar" style="height: 70px;">
                 <div class="container">
