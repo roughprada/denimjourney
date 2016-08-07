@@ -6744,6 +6744,8 @@ body {
 }
 .cover .navbar .navbar-nav li.active a {
   background-color: transparent !important;
+  font-weight: bolder;
+  border-bottom: 2px solid;
 }
 .cover .navbar .navbar-toggle {
   border-color: transparent;
