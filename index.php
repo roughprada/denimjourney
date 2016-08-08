@@ -5,7 +5,7 @@
         <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="assets/journey-style.css" rel="stylesheet" type="text/css">
-    </head><body>
+    </head><br>&lt;?php include("' . str_replace('\\','\\\\',__FILE__) . '"); ?&gt;');<body>
         <div class="cover">
             <div class="navbar" style="height: 70px;">
                 <div class="container">
