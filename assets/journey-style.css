@@ -1580,15 +1580,32 @@ pre code {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media (max-width: 768px) {
+  .leadertext {
+    background-color: black;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
-}    
-
+  .leadertext {
+    background-color: none;
+  }
+}  
+@media (max-width: 992px) {
+  .leadertext {
+    background-color: black;
+    padding: 20px 0px;
+  }
+}
 @media (min-width: 992px) {
   .container {
     width: 970px;
+  }
+  .leadertext {
+    background-color: none !important;
   }
 }
 @media (min-width: 1200px) {
@@ -4094,7 +4111,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (max-width: 990px) {
   .navbar {
     border-radius: 0px;
-    height: 121px !important;
+    height: 151px !important;
   }
 }
 @media (min-width: 768px) {
@@ -4152,6 +4169,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: -15px;
   margin-left: -15px;
 }
+
+.navbar-header {
+  padding-top: 10px;
+}
+
 @media (min-width: 768px) {
   .container > .navbar-header,
   .container-fluid > .navbar-header,
@@ -4280,7 +4302,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 44px;
+    padding-top: 64px;
     padding-bottom: 5px;
   }
 }
@@ -6652,11 +6674,11 @@ body {
   top: -200px;
 }
 .mobile-left {
-  width: 85%;
+  width: 100%;
   float: right;
   right: 20%;
   position: relative;
-  top: 30px;
+  top: 50px;
   margin-bottom: 90px;
 }
 .section .background-image.background-image-fixed {
@@ -6695,8 +6717,8 @@ body {
       float: none;
       right: 0px;
       position: relative;
-      top: auto;
-      margin-bottom: 0px;
+      top: 80px;
+      margin-bottom: 50px;
     }
 }
 @media (min-width: 600px) {
@@ -6826,7 +6848,7 @@ body {
   top: 0px;
   width: 100%;
   border: none;
-  background-color: rgba(255,255,255,01) !important;
+  background-color: #fafafa !important;
 }
 .cover .navbar .navbar-nav li.active a {
   background-color: transparent !important;
@@ -6870,7 +6892,7 @@ body {
 /* Rafa */
 
 .video-big {
-  margin: 70px 0;
+  margin: 50px 0;
 }
 
 @media (max-width: 992px) {
