@@ -1941,6 +1941,9 @@ pre code {
   	width: 50%;
   	float:right;
   }
+  img {
+    padding-top: 10px !important;    
+  }
 }
 
 @media (min-width: 992px) {
@@ -6641,9 +6644,67 @@ body {
   background-size: cover;
   background-position: center;
 }
+.mobile-right-a {
+  width: 80%;
+  float: right;
+  right: 12%;
+  position: relative;
+  top: -200px;
+}
+.mobile-left {
+  width: 85%;
+  float: right;
+  right: 20%;
+  position: relative;
+  top: 30px;
+  margin-bottom: 90px;
+}
 .section .background-image.background-image-fixed {
   background-attachment: fixed;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .cover-image {
+       display: none;
+    }
+    .mobile-only {
+    padding: 40px;
+    background-color: black;
+    margin-top: 80px;
+    }
+    .mobile-right-a {
+      width: 100%;
+      float: none;
+      right: 0px;
+      position: relative;
+      top: auto;
+    }
+    .mobile-left {
+      width: 100%;
+      float: none;
+      right: 0px;
+      position: relative;
+      top: auto;
+    }
+}
+@media (min-width: 600px) {
+    .mobile-left {
+      width: 100%;
+      float: none;
+      right: 0px;
+      position: relative;
+      top: auto;
+      margin-bottom: 0px;
+    }
+}
+@media (min-width: 600px) {
+  .section {
+    padding-top: 10px !important;
+  }
+}
+
 .section-primary {
     background-color: #f6f6f6 !important;
     color: #737373;
@@ -6680,6 +6741,7 @@ body {
 .section-danger .background-image {
   opacity: 0.5;
 }
+
 .cover {
   padding: 30px 15px;
   margin-bottom: 30px;
@@ -6804,4 +6866,15 @@ body {
 .cover .cover-image.cover-image-fixed {
   background-attachment: fixed;
 }
-/* PINGENDO COMMENT DO NOT REMOVE */
+
+/* Rafa */
+
+.video-big {
+  margin: 70px;
+}
+
+@media (max-width: 992px) {
+  .video-big {
+    margin: 10px;
+  }
+}
