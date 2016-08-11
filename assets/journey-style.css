@@ -6870,11 +6870,11 @@ body {
 /* Rafa */
 
 .video-big {
-  margin: 70px;
+  margin: 70px 0;
 }
 
 @media (max-width: 992px) {
   .video-big {
-    margin: 10px;
+    margin: 40px 0;
   }
 }
