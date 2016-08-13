@@ -4234,6 +4234,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-left: -15px;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar-brand, {
+    margin-top: 8px;
+  }
+}
 .navbar-toggle {
   position: relative;
   float: right;
