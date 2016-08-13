@@ -3555,7 +3555,7 @@ tbody.collapse.in {
   right: 0;
   bottom: 0;
   top: 0;
-  z-index: 990;
+  z-index: 992;
 }
 .pull-right > .dropdown-menu {
   right: 0;
@@ -4099,7 +4099,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 91px;
   margin-bottom: 0px;
   border: 1px solid transparent;
 }
@@ -4217,8 +4217,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 15px;
+  line-height: 16px;
   height: 50px;
 }
 .navbar-brand:hover,
@@ -4235,9 +4235,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 
-@media (max-width: 768px) {
-  .navbar-brand, {
-    margin-top: 8px;
+@media (min-width: 486px) and (max-width: 992px){
+  .mobile-brand {
+    padding-top: 23px;
+  }
+}
+@media (max-width: 486px) {
+  .mobile-brand {
+    padding-top: 40px;
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .navbar {
+    height: 120px !important;
   }
 }
 .navbar-toggle {
@@ -6461,7 +6472,7 @@ button.close {
     display: inline-block !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 990px) {
   .visible-sm {
     display: block !important;
   }
@@ -6476,17 +6487,17 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 990px) {
   .visible-sm-block {
     display: block !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 990px) {
   .visible-sm-inline {
     display: inline !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 990px) {
   .visible-sm-inline-block {
     display: inline-block !important;
   }
@@ -6556,7 +6567,7 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 990px) {
   .hidden-sm {
     display: none !important;
   }
