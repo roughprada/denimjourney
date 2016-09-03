@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="loading">
 <head>
     <title>A Journey Through the lens</title>
     <meta charset="utf-8">
@@ -21,6 +21,39 @@
   ga('send', 'pageview');
 </script>
 
+        <style>
+            html {
+                -webkit-transition: background-color 1s;
+                transition: background-color 1s;
+            }
+            html, body { min-height: 100%; }
+            html.loading {
+                background: #ededed url('img/load.gif') no-repeat 50% 50%;
+                -webkit-transition: background-color 0;
+                transition: background-color 0;
+            }
+            body {
+                -webkit-transition: opacity 1s ease-in;
+                transition: opacity 1s ease-in;
+            }
+            html.loading body {
+                opacity: 0.1;
+                -webkit-transition: opacity 0;
+                transition: opacity 0;
+            }
+        </style>
+        <script>
+            var html = document.getElementsByTagName('html')[0];
+            var removeLoading = function() {
+                // In a production application you would remove the loading class when your
+                // application is initialized and ready to go.  Here we just artificially wait
+                // 3 seconds before removing the class.
+                setTimeout(function() {
+                    html.className = html.className.replace(/loading/, '');
+                }, 3000);
+            };
+            removeLoading();
+        </script>
 </head>
 <body>
     <div class="cover">
