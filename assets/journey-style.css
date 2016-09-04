@@ -6976,3 +6976,7 @@ html.loading body {
     -webkit-transition: opacity 0;
     transition: opacity 0;
 }
+
+.way {
+  top: -50px;
+}
